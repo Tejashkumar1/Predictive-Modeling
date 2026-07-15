@@ -1,0 +1,24 @@
+PREDICTIVE MODELING REPORT
+========================================
+
+Target: Computer_Science marks
+Features: Maths, Physics, Chemistry, English, attendance_pct
+
+MODEL COMPARISON
+----------------------------------------
+Baseline (predict average) -> MAE: 17.34, RMSE: 19.87, R2: -0.004
+Linear Regression -> MAE: 18.81, RMSE: 21.48, R2: -0.173
+Decision Tree -> MAE: 17.5, RMSE: 19.74, R2: 0.009
+Random Forest -> MAE: 17.88, RMSE: 21.13, R2: -0.135
+Random Forest - Tuned -> MAE: 17.85, RMSE: 20.93, R2: -0.115
+
+BEST MODEL
+----------------------------------------
+Decision Tree with R2 = 0.009
+
+INTERPRETATION
+----------------------------------------
+No model beat the baseline in any meaningful way. This means a
+student's marks in one subject do not really predict their marks
+in another subject in this dataset. That is still a useful and
+honest finding to report.
